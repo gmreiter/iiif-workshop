@@ -1,0 +1,95 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://gmreiter.github.io/iiif-workshop/manifests/manifest.json",
+  "@type" : "sc:Manifest",
+  "label" : "This is George's great manifest",
+  "metadata" : [ {
+    "label" : "photographer",
+    "value" : "Georg Reiter"
+  }, {
+    "label" : "Taken",
+    "value" : {
+      "@value" : "House of the Holy, Abtenau, 2023",
+      "@language" : "en"
+    }
+  } ],
+  "description" : [ {
+    "@value" : "This is a collection of photos taken by Georg at House of the Holy",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "Copyright Georg Reiter but released as Creative Commons",
+  "sequences" : [ {
+    "@id" : "http://63f13352-c93e-4745-9b39-b2a805315014",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://c188d175-53b4-4e4f-bf54-8942397d79c9",
+      "@type" : "sc:Canvas",
+      "label" : "HOTH_day",
+      "height" : 3472,
+      "width" : 4640,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://82c8312d-3d46-4860-a61b-f744033484ed",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/img-20230617-182603/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/img-20230617-182603",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 3472,
+          "width" : 4640
+        },
+        "on" : "http://c188d175-53b4-4e4f-bf54-8942397d79c9"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://1adb2a03-5048-45f8-8672-827c9a13bd00",
+      "@type" : "sc:Canvas",
+      "label" : "HOTH_night",
+      "height" : 3472,
+      "width" : 4640,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://5943abd7-e779-42df-a33e-b4112a01ed28",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/img-20230616-220029/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/img-20230616-220029",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 3472,
+          "width" : 4640
+        },
+        "on" : "http://1adb2a03-5048-45f8-8672-827c9a13bd00"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/top",
+    "@type" : "sc:Range",
+    "label" : "Table of Content",
+    "viewingHint" : "top",
+    "ranges" : [ "http://example.org/iiif/book1/range/intro" ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/intro",
+    "@type" : "sc:Range",
+    "label" : "Introduction",
+    "canvases" : [ "http://c188d175-53b4-4e4f-bf54-8942397d79c9" ]
+  } ]
+}
