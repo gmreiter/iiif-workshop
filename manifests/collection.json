@@ -1,0 +1,13 @@
+{
+  "id" : "https://gmreiter.github.io/iiif-workshop/manifests/collection.json",
+  "label" : {
+    "en" : [ "All manifests loaded in gmreiter/iiif-workshop project" ]
+  },
+  "type" : "Collection",
+  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "items" : [ {
+    "@type" : "sc:Manifest",
+    "@id" : "https://gmreiter.github.io/iiif-workshop/manifests/manifest.json",
+    "label" : "This is George's great manifest"
+  } ]
+}
